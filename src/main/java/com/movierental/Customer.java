@@ -49,4 +49,19 @@ public class Customer {
     }
     return totalAmount;
   }
+
+  public String htmlStatement() {
+    String result = "<h1>Rental Record for <b>" + getName() + "</b></h1><br />";
+    for (Rental each : rentals) {
+      //show figures for this rental
+      result += "\t" + each.getMovie().getTitle() + "\t" +
+              String.valueOf(each.amount()) + "<br />";
+    }
+
+    //add footer lines result
+    result += "Amount owed is <b>" + String.valueOf(totalAmount()) + "</b><br />";
+    result += "You earned <b>" + String.valueOf(frequentRenterPoints())
+            + "</b> frequent renter points";
+    return result;
+  }
 }
