@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
     @Test
-    public void test_regular_movie_2_days() {
+    public void shouldGenerateTextInvoiceWhenRegularMovieIsRentedForTwoDays() {
         String customerName = "John";
         String movieName = "LOTR";
 
@@ -21,7 +21,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_regular_movie_3_days() {
+    public void shouldGenerateTextInvoiceWhenRegularMovieIsRentedForThreeDays() {
         String customerName = "John";
         String movieName = "LOTR";
 
@@ -36,7 +36,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_new_release_movie_1_days() {
+    public void shouldGenerateTextInvoiceWhenNewReleaseMovieIsRentedForADay() {
         String customerName = "John";
         String movieName = "Star wars 9";
 
@@ -51,7 +51,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_new_release_movie_2_days_regular_1_day() {
+    public void shouldGenerateTextInvoiceWhenNewReleaseAndRegularMoviesAreRented() {
         String customerName = "John";
         String movieName1 = "End Game";
         String movieName2 = "LOTR";
@@ -69,7 +69,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_children_movie_3_days() {
+    public void shouldGenerateTextInvoiceWhenChildrenMovieIsRentedForThreeDays() {
         String customerName = "John";
         String movieName = "ET";
 
@@ -84,7 +84,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_children_movie_5_days() {
+    public void shouldGenerateTextInvoiceWhenChildrenMovieIsRentedForFiveDays() {
         String customerName = "John";
         String movieName = "ET";
 
@@ -99,7 +99,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_regular_movie_2_days_html() {
+    public void shouldGenerateHtmlInvoiceWhenRegularMovieIsRentedForTwoDays() {
         String customerName = "John";
         String movieName = "LOTR";
 
@@ -114,7 +114,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_regular_movie_3_days_html() {
+    public void shouldGenerateHtmlInvoiceWhenRegularMovieIsRentedForThreeDays() {
         String customerName = "John";
         String movieName = "LOTR";
 
@@ -129,7 +129,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_new_release_movie_1_days_html() {
+    public void shouldGenerateHtmlInvoiceWhenNewReleaseMovieIsRentedForADay() {
         String customerName = "John";
         String movieName = "Star wars 9";
 
@@ -144,7 +144,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_new_release_movie_2_days_regular_1_day_html() {
+    public void shouldGenerateHtmlInvoiceWhenNewReleaseAndRegularMoviesAreRented() {
         String customerName = "John";
         String movieName1 = "End Game";
         String movieName2 = "LOTR";
@@ -162,7 +162,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_children_movie_3_days_html() {
+    public void shouldGenerateHtmlInvoiceWhenChildrenMovieIsRentedForThreeDays() {
         String customerName = "John";
         String movieName = "ET";
 
@@ -177,7 +177,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void test_children_movie_5_days_html() {
+    public void shouldGenerateHtmlInvoiceWhenChildrenMovieIsRentedForFiveDays() {
         String customerName = "John";
         String movieName = "ET";
 
